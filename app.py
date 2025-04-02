@@ -129,8 +129,8 @@ def forget_pass():
         org_password = snt_pass[0]
         
         # Email sending logic
-        sender_email = "amnydv.66dob@gmail.com"  # Replace with your email
-        sender_password = "fnku twgv bovk clpe"        # Replace with your email password
+        sender_email =  os.getenv('sender_m') # Replace with your email
+        sender_password = os.getenv('sender_p')         # Replace with your email password
         subject = "Your Password Recovery Request"
         recipient_email = email
 
@@ -167,8 +167,8 @@ def complain_box():
     suggestion=data.get('suggestion')
     
     #details of sender and reciever  
-    sender_email = "amnydv.66dob@gmail.com" #os.getenv('sender_m') 
-    sender_password = "fnku twgv bovk clpe" #os.getenv('sender_p')     
+    sender_email =  os.getenv('sender_m') 
+    sender_password =  os.getenv('sender_p')     
     subject = "Feedback and suggestions"
     recipient_email = 'pwnydv.02@gmail.com'
     
